@@ -1,5 +1,5 @@
 .hamburger-symbol{
-    z-index: 2;
+    z-index: 9;
     width: auto;
     height: auto;
     font-size: 90px;
@@ -94,3 +94,40 @@
 .sidemenu > button:hover{
     transform: scale(1.15);
 }
+
+
+@media (max-width : 900px){
+    .sidemenu{
+        width: 50%;
+    }
+
+    .sidemenu > button {
+        font-size: 20px;
+    }
+
+    .bar{
+        width: 40px;
+        height: 2.5px;
+    }
+}
+
+
+@media (max-width : 425px){
+    .sidemenu{
+        width: 80%;
+    }
+
+    .sidemenu > button {
+        font-size: 15px;
+        width: auto;
+        height: 40px;
+        margin: 2px;
+        padding: 8px;
+    }
+
+    .bar{
+        width: 40px;
+        height: 2.5px;
+    }
+}
+
