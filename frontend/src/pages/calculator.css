@@ -337,21 +337,7 @@
 
 
 @media (max-width : 600px){
-    /* .ellipse-bottom-right,.ellipse-top-left,.ellipse-top-right,.plus-logo,.multiply-logo,.equal-logo{
-        display: none;
-    }
-
-    .backgroundCalculator{
-        background: linear-gradient(to bottom, #b8f3d7 10%, #fcf5e5 20%);
-        overflow: none;
-    }
-
-    .title-bold{
-        font-size: 42px;
-        top : 1%;
-        left : 5%;
-    } */
-    
+ 
     .ellipse-top-right{
         left: -90%;
         top: -16%;
@@ -368,6 +354,11 @@
         height: 17vh;
         left: 80%;
         top: -4%;
+    }
+    .title-bold{
+        font-size: 12vw;
+        top : 0.8%;
+        left : 1%;
     }
 
 
@@ -396,8 +387,16 @@
         font-size: 13vw;
     }
 
-    .additional-btn{
+    .calcbody,.calcbody2{
+        width: 240px;
+    }
+
+    .additional-btn > button{
         width: 80px;
+    }
+    .btn-container > button {
+        width: 40px;
+        height: 50px;
     }
 }
 
