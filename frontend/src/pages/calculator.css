@@ -337,7 +337,7 @@
 
 
 @media (max-width : 600px){
-    .ellipse-bottom-right,.ellipse-top-left,.ellipse-top-right,.plus-logo,.multiply-logo,.equal-logo{
+    /* .ellipse-bottom-right,.ellipse-top-left,.ellipse-top-right,.plus-logo,.multiply-logo,.equal-logo{
         display: none;
     }
 
@@ -347,10 +347,57 @@
     }
 
     .title-bold{
-        font-size: 16vw;
-        top : 0%
-    }
+        font-size: 42px;
+        top : 1%;
+        left : 5%;
+    } */
     
+    .ellipse-top-right{
+        left: -90%;
+        top: -16%;
+        width: 64vh;
+        height: 67vh;
+    }
+    .ellipse-bottom-right{
+        width: 70vh;
+        height: 80vh;
+        top: 17%;
+    }
+    .ellipse-top-left{
+        width: 32vw;
+        height: 17vh;
+        left: 80%;
+        top: -4%;
+    }
 
 
 }
+
+@media (max-width : 300px){
+    .ellipse-top-right{
+        left: -90%;
+        top: -16%;
+        width: 44vh;
+        height: 67vh;
+    }
+    .ellipse-bottom-right{
+        width: 70vh;
+        height: 80vh;
+        top: 34%;
+    }
+    .ellipse-top-left{
+        width: 51vw;
+        height: 15vh;
+        left: 75%;
+        top: -3%;
+    }
+    .title-bold{
+        top : 1%;
+        font-size: 13vw;
+    }
+
+    .additional-btn{
+        width: 80px;
+    }
+}
+
