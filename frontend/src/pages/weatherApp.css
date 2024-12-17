@@ -1,0 +1,107 @@
+.weather-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-body{
+    position: absolute;
+    z-index: 9;
+    padding: 12px;
+    width: 400px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #30a6ff;
+    gap: 10px;
+}
+
+
+.weather-info{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 28px;
+}
+
+.temp-txt{
+    font-weight: bold;
+    font-size: 42px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.description-txt, .weather-info > h1{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+}
+
+.input-feild{
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.input-feild > input {
+    width: 80%;
+    height: 100px;
+    padding: 12px;
+    border: 0px;
+    outline: 0;
+    caret-color: black;
+    font-size: 40px;
+}
+
+
+.input-feild > input::placeholder{
+    color : black;
+    text-align: left;
+    font-size: 40px;
+}
+
+
+.input-feild > button{
+    border: 0px;
+    background-color: black;
+    color : white;
+    font-weight: bold;
+    padding: 10px;
+    height: 100%;
+    width: 30%;
+    border-radius: 16px;
+    transition: all 0.25s ease-in-out;
+    font-size: 18px;
+}
+
+.input-feild > button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+
+
+
+@media (max-width : 400px){
+    .center-body{
+        width: 90%;
+        height: 400px;
+    }
+}

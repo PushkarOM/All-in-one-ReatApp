@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom';
+import { useLocation , NavLink} from 'react-router-dom';
 import "./hamburger.css"
 
 const hamburger = () => {
@@ -8,8 +8,8 @@ const hamburger = () => {
     if (location.pathname === '/calculator') {
         sidemenuStyle = { backgroundColor: '#fcf5e5' };
     }
-    else if (location.pathname === '/weatherapp') {
-        sidemenuStyle = { backgroundColor: '#fcf5e5' };
+    else if (location.pathname === '/weather') {
+        sidemenuStyle = { backgroundColor: '#fcfeff' };
     }
     else {
         sidemenuStyle = { backgroundColor: '#fcf5e5' };
@@ -36,10 +36,42 @@ const hamburger = () => {
             </div>
             <div className={`sidemenu ${isSidebarActive ? 'active' : 'inactive'}`} style={sidemenuStyle}>
                 <div className='x-logo' onClick={closeSideMenu}>X</div>
-                <button>Games</button>
-                <button>Currency Converter</button>
-                <button>Note Taker</button>
-                <button>Weather App</button>
+                    <NavLink 
+                        className={({ isActive }) => isActive ? 'active-link' : 'Links'}
+                        activeClassName="active-link"
+                        to = "/"
+                    >
+                        Games
+                    </NavLink>
+                    <NavLink 
+                        className={({ isActive }) => isActive ? 'active-link' : 'Links'}
+                        activeClassName="active-link"
+                        to = "/"
+                    >
+                        Note Taker
+                    </NavLink>
+                    <NavLink 
+                        className={({ isActive }) => isActive ? 'active-link' : 'Links'}
+                        activeClassName="active-link"
+                        to = "/"
+                    >
+                        Currency Conveter
+                    </NavLink>
+                    <NavLink 
+                        className={({ isActive }) => isActive ? 'active-link' : 'Links'}
+                        activeClassName="active-link"
+                        to = "/calculator"
+                    >
+                        Calculator
+                    </NavLink>
+                    <NavLink 
+                        className={({ isActive }) => isActive ? 'active-link' : 'Links'}
+                        to = "/weather"
+                    >
+                        Weather
+                    </NavLink>
+
+                
             </div>
         </>
     )

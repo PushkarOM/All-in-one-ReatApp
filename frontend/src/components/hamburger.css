@@ -76,7 +76,7 @@
 }
 
 
-.sidemenu > button{
+.Links {
     height: 60px;
     width: auto;
     margin: 4px;
@@ -90,11 +90,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.sidemenu > button:hover{
-    transform: scale(1.15);
+    text-decoration: none;
+    color: Black;
 }
 
+.Links:hover{
+    transform: scale(1.15);
+    background-color: black;
+    color : white;
+}
+
+.active-link{
+    display: none;
+}
 
 @media (max-width : 900px){
     .sidemenu{

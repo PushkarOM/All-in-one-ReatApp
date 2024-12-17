@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { evaluate } from 'mathjs';
+import Background from '../components/Background';
 import "./calculator.css"
 
 const calculator = () => {
@@ -85,7 +86,7 @@ const calculator = () => {
 
     return (
         <>
-            <div className='backgroundCalculator'>
+            {/* <div className='backgroundCalculator'>
                 <div className='title-bold'>CALCULATOR</div>
                 <div className='ellipse-top-left'></div>
                 <div className='ellipse-top-right'></div>
@@ -94,7 +95,8 @@ const calculator = () => {
                 <div className='plus-logo'>+</div>
                 <div className='multiply-logo'>X</div>
                 <div className='equal-logo'>=</div>
-            </div>
+            </div> */}
+            <Background />
             <div className='calcsection' style={paddingValue}>
                 {
                     scientific && (
