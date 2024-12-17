@@ -30,37 +30,32 @@
     display: none;
 }
 .sidemenu {
-    display: none; 
-    position: absolute;
-    right: -100%;
+    position: fixed; 
     top: 0;
+    right: 0; 
     height: 100%;
     width: 400px;
-    padding-left: 30px;
+    padding-left: 3.5%;
     flex-direction: column;
-    gap: 24px;
+    gap: 18px;
     backdrop-filter: blur(0px); 
-    transition: right 0.25s ease-in-out, backdrop-filter 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; 
     z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 0; 
+    transform: translateX(100%); 
     box-shadow: -4px 0px 2px 3px gray;
 }
 
 .sidemenu.active {
-    display: block; 
-    right: 0;
-    backdrop-filter: blur(10px); 
     opacity: 1; 
-    visibility: visible;
+    transform: translateX(0); 
+    backdrop-filter: blur(10px); 
 }
 
 .sidemenu.inactive {
-    right: -100%;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 0; 
+    transform: translateX(100%); 
 }
-
 
 .x-logo{
     font-family: monospace;
@@ -76,7 +71,7 @@
 
 .Links {
     height: 60px;
-    width: auto;
+    width: 90%;
     margin: 8px;
     padding: 12px;
     border-radius: 12px;

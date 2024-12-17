@@ -52,7 +52,7 @@ const hamburger = () => {
                         className={({ isActive }) => isActive ? 'active-link' : 'Links'}
                         to = "/"
                     >
-                        Currency Conveter
+                        Currency Converter
                     </NavLink>
                     <NavLink 
                         className={({ isActive }) => isActive ? 'active-link' : 'Links'}
