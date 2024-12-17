@@ -29,19 +29,16 @@
 .hamburger-symbol.inactive{
     display: none;
 }
-
 .sidemenu {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-left: 30px;
-    flex-direction: column;
-    gap: 18px;
+    display: none; 
     position: absolute;
     right: -100%;
     top: 0;
     height: 100%;
     width: 400px;
+    padding-left: 30px;
+    flex-direction: column;
+    gap: 24px;
     backdrop-filter: blur(0px); 
     transition: right 0.25s ease-in-out, backdrop-filter 0.3s ease-in-out;
     z-index: 1000;
@@ -51,6 +48,7 @@
 }
 
 .sidemenu.active {
+    display: block; 
     right: 0;
     backdrop-filter: blur(10px); 
     opacity: 1; 
@@ -63,23 +61,23 @@
     visibility: hidden;
 }
 
+
 .x-logo{
     font-family: monospace;
     font-size: 74px;
     font-weight: bold;
-    transition: transform 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 
 .x-logo:hover{
     cursor: pointer;
-    transform: scale(1.1);
 }
 
 
 .Links {
     height: 60px;
     width: auto;
-    margin: 4px;
+    margin: 8px;
     padding: 12px;
     border-radius: 12px;
     font-family: monospace;
@@ -95,7 +93,7 @@
 }
 
 .Links:hover{
-    transform: scale(1.15);
+    transform: scale(1.05);
     background-color: black;
     color : white;
 }
