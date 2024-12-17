@@ -1,7 +1,7 @@
-.backgroundCalculator{
+.backgroundCalculator {
     position: absolute;
     z-index: 0;
-    top : 0;
+    top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -9,10 +9,10 @@
     background-color: #fcf5e5;
 }
 
-.ellipse-top-left{
+.ellipse-top-left {
     position: absolute;
-    top : -80%;
-    left : -30%;
+    top: -80%;
+    left: -30%;
     width: 145vh;
     height: 141vh;
     border-radius: 50%;
@@ -20,20 +20,20 @@
 }
 
 
-.ellipse-top-right{
+.ellipse-top-right {
     position: absolute;
-    top : -2%;
-    left : 95%;
+    top: -2%;
+    left: 95%;
     width: 12vh;
     height: 13vh;
     border-radius: 50%;
     animation: breatheffect 12s infinite;
 }
 
-.ellipse-bottom-right{
+.ellipse-bottom-right {
     position: absolute;
-    top : 50%;
-    left : 70%;
+    top: 50%;
+    left: 70%;
     width: 35vw;
     height: 65vh;
     border-radius: 50%;
@@ -41,29 +41,32 @@
 }
 
 @keyframes breatheffect {
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.25);
-    }
-    100%{
+    0% {
         transform: scale(1);
     }
 
-    
+    50% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+
 }
-.title-bold{
+
+.title-bold {
     position: relative;
     z-index: 1;
-    top : -2.5%;
-    left : 0%;
+    top: -2.5%;
+    left: 0%;
     font-family: monospace;
     font-size: 10vw;
     font-weight: bold;
 }
 
-.title-small{
+.title-small {
     position: relative;
     z-index: 1;
     bottom: 40%;
@@ -78,38 +81,165 @@
 .logo {
     position: absolute;
     z-index: 3;
-    font-size:40vh;
+    font-size: clamp(24px, 15vw, 15vw);
     font-weight: bold;
     font-family: monospace;
-    
-    filter: blur(5px); 
+    filter: blur(5px);
 }
 
-.one{
-    top: 2.5%;
+.one {
+    top: 7.5%;
     left: 60%;
 }
 
-.two{
-    top: 55%;
+.two {
+    top: 58%;
     left: 60%;
 }
-.three{
-    top: 50%;
-    left: 30%;
+
+.three {
+    top: 58%;
+    left: 28%;
 }
 
 
-.ellipse-top-left{
+.ellipse-top-left {
     box-shadow: 8px 8px 4px 1px #56544e;
 }
 
-.ellipse-top-right{
+.ellipse-top-right {
     box-shadow: -8px 8px 4px 1px #56544e;
 }
 
-.ellipse-bottom-right{
+.ellipse-bottom-right {
     box-shadow: -8px -8px 4px 1px #56544e;
 
 }
 
+
+
+/*Making the site more responsive*/
+@media (max-width : 1400px) {
+    .title-small {
+        display: none;
+    }
+}
+
+@media (max-width : 1200px) {
+    .title-bold {
+        top: -0.5%;
+        font-size: 16vw;
+    }
+
+    .ellipse-top-left {
+        left: -90%;
+        top: -46%;
+        width: 113vh;
+        height: 95vh;
+    }
+
+    .ellipse-bottom-right {
+        width: 54vh;
+        height: 65vh;
+    }
+
+    .ellipse-top-right {
+        width: 12vw;
+        height: 9vh;
+        left: 92%;
+        top: -2%;
+    }
+}
+
+@media (max-width:786px) {
+
+
+
+
+    .ellipse-top-left {
+        left: -90%;
+        top: -2%;
+        width: 100vh;
+        height: 100vh;
+    }
+
+    .ellipse-bottom-right {
+        width: 70vh;
+        height: 80vh;
+    }
+
+    .ellipse-top-right {
+        width: 32vw;
+        height: 20vh;
+        left: 80%;
+        top: -4%;
+    }
+
+
+
+
+    .title-bold {
+        top: 2%;
+    }
+}
+
+
+@media (max-width : 600px) {
+
+    .ellipse-top-right {
+        left: -90%;
+        top: -16%;
+        width: 64vh;
+        height: 67vh;
+    }
+
+    .ellipse-bottom-right {
+        width: 70vh;
+        height: 80vh;
+        top: 17%;
+    }
+
+    .ellipse-top-left {
+        width: 32vw;
+        height: 17vh;
+        left: 80%;
+        top: -4%;
+    }
+
+    .title-bold {
+        font-size: 16vw;
+        top: 0.8%;
+        left: 1%;
+    }
+
+
+}
+
+@media (max-width : 300px) {
+    .ellipse-top-right {
+        left: -90%;
+        top: -16%;
+        width: 44vh;
+        height: 67vh;
+    }
+
+    .ellipse-bottom-right {
+        width: 70vh;
+        height: 80vh;
+        top: 34%;
+    }
+
+    .ellipse-top-left {
+        width: 51vw;
+        height: 15vh;
+        left: 75%;
+        top: -3%;
+    }
+
+    .title-bold {
+        top: 1%;
+        font-size: 15vw;
+    }
+
+
+}
