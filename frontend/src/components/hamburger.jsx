@@ -38,28 +38,24 @@ const hamburger = () => {
                 <div className='x-logo' onClick={closeSideMenu}>X</div>
                     <NavLink 
                         className={({ isActive }) => isActive ? 'active-link' : 'Links'}
-                        activeClassName="active-link"
                         to = "/"
                     >
                         Games
                     </NavLink>
                     <NavLink 
                         className={({ isActive }) => isActive ? 'active-link' : 'Links'}
-                        activeClassName="active-link"
                         to = "/"
                     >
                         Note Taker
                     </NavLink>
                     <NavLink 
                         className={({ isActive }) => isActive ? 'active-link' : 'Links'}
-                        activeClassName="active-link"
                         to = "/"
                     >
                         Currency Conveter
                     </NavLink>
                     <NavLink 
                         className={({ isActive }) => isActive ? 'active-link' : 'Links'}
-                        activeClassName="active-link"
                         to = "/calculator"
                     >
                         Calculator
