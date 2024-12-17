@@ -4,7 +4,7 @@
     height: auto;
     font-size: 90px;
     position: absolute;
-    top : 2%;
+    top : 1.5%;
     right : 0.5%;
     display: flex;
     justify-content: center;
@@ -136,6 +136,9 @@
     .bar{
         width: 40px;
         height: 4px;
+    }
+    .hamburger-symbol{
+        top : 2.15%;
     }
 }
 
