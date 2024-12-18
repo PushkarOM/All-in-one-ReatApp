@@ -160,12 +160,12 @@
 
 
 
-@media (max-width : 300px) {
+@media (max-width:400px) {
 
 
     .calcbody,
     .calcbody2 {
-        width: 95%;
+        width: 92% ;
     }
 
     .additional-btn>button {

@@ -11,6 +11,9 @@ const hamburger = () => {
     else if (location.pathname === '/weather') {
         sidemenuStyle = { backgroundColor: '#fcfeff' };
     }
+    else if(location.pathname === '/currencyconverter'){
+        sidemenuStyle = { backgroundColor : "#dbe8b5"};
+    }
     else {
         sidemenuStyle = { backgroundColor: '#fcf5e5' };
     }
@@ -50,7 +53,7 @@ const hamburger = () => {
                     </NavLink>
                     <NavLink 
                         className={({ isActive }) => isActive ? 'active-link' : 'Links'}
-                        to = "/"
+                        to = "/currencyconverter"
                     >
                         Currency Converter
                     </NavLink>

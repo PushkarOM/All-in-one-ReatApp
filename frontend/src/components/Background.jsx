@@ -1,9 +1,9 @@
 import React from "react";
 import "./Background.css";
 import { useLocation } from "react-router-dom";
-
 // Import icons for calculator and weather
 import { FaPlus, FaTimes, FaEquals } from "react-icons/fa";
+import { FaRupeeSign, FaDollarSign, FaPoundSign } from "react-icons/fa";
 import { IoSunny, IoRainy, IoCloudy } from "react-icons/io5";
 
 const Background = () => {
@@ -14,7 +14,9 @@ const Background = () => {
     backgroundStyle,
     oneLogo,
     twoLogo,
-    threeLogo;
+    threeLogo,
+    fontboldsize,
+    fontsmallsize;
 
   // Dynamically update the Background Values
   if (location.pathname === "/calculator") {
@@ -37,7 +39,18 @@ const Background = () => {
     oneLogo = <IoSunny className="logo-icon" />;
     twoLogo = <IoRainy className="logo-icon" />;
     threeLogo = <IoCloudy className="logo-icon" />;
-  } else {
+  }else if (location.pathname === "/currencyconverter") {
+    ellipseStyle = { backgroundColor: "#a9e700" };
+    backgroundStyle = { backgroundColor: "#dbe8b5" };
+    text = "CURRENCY";
+    textlower = "CurrenCy";
+
+    // Icons for weather
+    oneLogo = <FaRupeeSign className="logo-icon" />;
+    twoLogo = <FaDollarSign className="logo-icon" />;
+    threeLogo = <FaPoundSign className="logo-icon" />;
+  }
+   else {
     ellipseStyle = { backgroundColor: "#b8f3d7" };
     backgroundStyle = { backgroundColor: "#fcf5e5" };
     text = "CALCULATOR";

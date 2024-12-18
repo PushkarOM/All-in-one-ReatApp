@@ -18,6 +18,7 @@
     flex-direction: column;
     background-color: #30a6ff;
     gap: 10px;
+    box-shadow: 6px 6px 4px 0.5px gray;
 }
 
 
@@ -84,7 +85,7 @@
     font-weight: bold;
     padding: 10px;
     height: 100%;
-    width: 30%;
+    width: 35%;
     border-radius: 16px;
     transition: all 0.25s ease-in-out;
     font-size: 18px;
