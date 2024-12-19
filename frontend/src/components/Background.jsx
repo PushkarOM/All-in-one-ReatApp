@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 // Import icons for calculator and weather
 import { FaPlus, FaTimes, FaEquals } from "react-icons/fa";
 import { FaRupeeSign, FaDollarSign, FaPoundSign } from "react-icons/fa";
+import { FaPencilAlt, FaPencilRuler, FaRuler } from "react-icons/fa";
 import { IoSunny, IoRainy, IoCloudy } from "react-icons/io5";
 
 
@@ -45,6 +46,16 @@ const Background = () => {
     oneLogo = <FaRupeeSign className="logo-icon" />;
     twoLogo = <FaDollarSign className="logo-icon" />;
     threeLogo = <FaPoundSign className="logo-icon" />;
+  }
+  else if (location.pathname === "/todoapp") {
+    ellipseStyle = { backgroundColor: "#e79e00" };
+    backgroundStyle = { backgroundColor: "#f0d9a6" };
+    textlower = "ToDoList";
+    text = "TODO LIST";
+    // Icons for weather
+    oneLogo = <FaPencilRuler className="logo-icon" />;
+    twoLogo = <FaRuler className="logo-icon" style={{ transform: "rotatez(73deg)" }} />;
+    threeLogo = <FaPencilAlt className="logo-icon" />;
   }
    else {
     ellipseStyle = { backgroundColor: "#b8f3d7" };

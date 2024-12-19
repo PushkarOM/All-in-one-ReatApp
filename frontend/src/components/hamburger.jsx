@@ -14,6 +14,9 @@ const hamburger = () => {
     else if(location.pathname === '/currencyconverter'){
         sidemenuStyle = { backgroundColor : "#dbe8b5"};
     }
+    else if(location.pathname === '/todoapp'){  
+        sidemenuStyle = { backgroundColor : "#f0d9a6"};
+    }
     else {
         sidemenuStyle = { backgroundColor: '#fcf5e5' };
     }
