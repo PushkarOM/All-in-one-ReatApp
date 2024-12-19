@@ -10,6 +10,7 @@ import { IoSunny, IoRainy, IoCloudy } from "react-icons/io5";
 const Background = () => {
   const location = useLocation();
   let ellipseStyle,
+    text,
     textlower,
     backgroundStyle,
     oneLogo,
@@ -21,7 +22,7 @@ const Background = () => {
     ellipseStyle = { backgroundColor: "#b8f3d7" };
     backgroundStyle = { backgroundColor: "#fcf5e5" };
     textlower = "Calculator";
-
+    text = "CALCULATOR";
     // Icons for calculator
     oneLogo = <FaPlus className="logo-icon" />;
     twoLogo = <FaTimes className="logo-icon" />;
@@ -30,7 +31,7 @@ const Background = () => {
     ellipseStyle = { backgroundColor: "#30a6ff" };
     backgroundStyle = { backgroundColor: "#fcfeff" };
     textlower = "WeaTher";
-
+    text = "WEATHER";
     // Icons for weather
     oneLogo = <IoSunny className="logo-icon" />;
     twoLogo = <IoRainy className="logo-icon" />;
@@ -39,7 +40,7 @@ const Background = () => {
     ellipseStyle = { backgroundColor: "#a9e700" };
     backgroundStyle = { backgroundColor: "#dbe8b5" };
     textlower = "CurrenCy";
-
+    text = "CURRENCY";
     // Icons for weather
     oneLogo = <FaRupeeSign className="logo-icon" />;
     twoLogo = <FaDollarSign className="logo-icon" />;
@@ -49,12 +50,13 @@ const Background = () => {
     ellipseStyle = { backgroundColor: "#b8f3d7" };
     backgroundStyle = { backgroundColor: "#fcf5e5" };
     textlower = "Calculator";
-
+    text = "CALCULATOR";
   }
 
   return (
     <>
       <div className="backgroundCalculator" style={backgroundStyle}>
+        <div className="title-bold" >{text}</div>
         <div className="ellipse-top-left" style={ellipseStyle}></div>
         <div className="ellipse-top-right" style={ellipseStyle}></div>
         <div className="ellipse-bottom-right" style={ellipseStyle}></div>

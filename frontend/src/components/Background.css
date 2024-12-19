@@ -67,7 +67,16 @@
     transform: rotate(-90deg);
     transform-origin: center;
 }
+.title-bold {
+    position: absolute;
+    z-index: 12;
+    font-family: monospace;
+    font-size: 10vw;
+    font-weight: bold;
+    width : 100%;
+    height : auto;
 
+}
 .logo {
     position: absolute;
     z-index: 3;
@@ -191,7 +200,10 @@
         top: -4%;
     }
 
-
+    .title-bold{
+        top : 0.75%;
+        left : 2.5%;
+    }
 
 
 }

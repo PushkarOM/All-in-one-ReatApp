@@ -6,17 +6,10 @@
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 
 }
 
-.title-bold {
-    z-index: 1;
-    font-family: monospace;
-    font-size: 10vw;
-    font-weight: bold;
-    width : 100%;
-    height : auto;
-}
+
 
