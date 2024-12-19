@@ -2,7 +2,7 @@ import React from "react";
 import "./Background.css";
 import { useLocation } from "react-router-dom";
 // Import icons for calculator and weather
-import { FaPlus, FaTimes, FaEquals } from "react-icons/fa";
+import { FaPlus, FaTimes, FaEquals, FaRobot } from "react-icons/fa";
 import { FaRupeeSign, FaDollarSign, FaPoundSign } from "react-icons/fa";
 import { FaPencilAlt, FaPencilRuler, FaRuler } from "react-icons/fa";
 import { IoSunny, IoRainy, IoCloudy } from "react-icons/io5";
@@ -16,7 +16,8 @@ const Background = () => {
     backgroundStyle,
     oneLogo,
     twoLogo,
-    threeLogo;
+    threeLogo,
+    chatbottextstyle;
 
   // Dynamically update the Background Values
   if (location.pathname === "/calculator") {
@@ -56,6 +57,15 @@ const Background = () => {
     oneLogo = <FaPencilRuler className="logo-icon" />;
     twoLogo = <FaRuler className="logo-icon" style={{ transform: "rotatez(73deg)" }} />;
     threeLogo = <FaPencilAlt className="logo-icon" />;
+  } else if (location.pathname === "/chatbot") {
+    ellipseStyle = { backgroundColor: "#000000" , "box-shadow" : "0 0 10px 0 #ffffff"};
+    backgroundStyle = { backgroundColor: "#50a1f2" };
+    textlower = "ChatBot";
+    text = "CHATBOT";
+    chatbottextstyle = { color: "white" };
+    // Icons for weather
+    
+    oneLogo = <FaRobot className="logo-icon" style={{ transform: "rotatez(45deg)" }} />;
   }
    else {
     ellipseStyle = { backgroundColor: "#b8f3d7" };
@@ -67,11 +77,11 @@ const Background = () => {
   return (
     <>
       <div className="backgroundCalculator" style={backgroundStyle}>
-        <div className="title-bold" >{text}</div>
+        <div className="title-bold" style={chatbottextstyle}>{text}</div>
         <div className="ellipse-top-left" style={ellipseStyle}></div>
         <div className="ellipse-top-right" style={ellipseStyle}></div>
         <div className="ellipse-bottom-right" style={ellipseStyle}></div>
-        <div className="title-small">{textlower}</div>
+        <div className="title-small" style={chatbottextstyle}>{textlower}</div>
 
         {/* Dynamic Logos */}
         <div className="logo one">{oneLogo}</div>

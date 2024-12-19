@@ -1,0 +1,92 @@
+.chatbotApp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chatbot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    position: absolute;
+}
+
+.Botbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    border: 4px solid black;
+    border-radius: 40px;
+    padding: 8px;
+    background-color: #50a1f2;
+}
+
+.chat-window{
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 90%;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: white;
+}
+
+.inputChat{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    gap: 4px;
+
+}
+.inputChat > input{
+    width: 80%;
+    height: 100%;
+    border-radius: 28px;
+    padding: 12px;
+    font-size: 24px;
+    outline: none;
+    border: none;
+}
+
+
+
+.inputChat > button{
+    border-radius: 28px;
+    height: 100%;
+    width: 25%;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+.inputChat > button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 425px){
+    .Botbody{
+        width: 300px;
+        height: 400px;
+    }
+    .chat-window{
+        font-size: 16px;
+    }
+    .inputChat > input{
+        font-size: 20px;
+    }
+    .inputChat > button{
+        font-size: 20px;
+    }
+    
+}
