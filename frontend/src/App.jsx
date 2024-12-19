@@ -4,13 +4,13 @@ import './App.css';
 import Calculator from './pages/calculator.jsx';
 import WeatherApp from './pages/weatherApp.jsx';
 import CurrencyConverter from './pages/currencyConverter.jsx';
-//components
-import Hamburger from './components/hamburger.jsx';
+import Header from './components/header.jsx';
+
 
 function App() {
   return (
     <Router>
-      <Hamburger />
+      <Header />
       <Routes>
         <Route path="/" element={<Calculator />} /> 
         <Route path="/calculator" element={<Calculator />} />

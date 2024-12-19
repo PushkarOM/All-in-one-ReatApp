@@ -56,20 +56,10 @@
 
 }
 
-.title-bold {
-    position: relative;
-    z-index: 1;
-    top: -2.5%;
-    left: 0%;
-    font-family: monospace;
-    font-size: 10vw;
-    font-weight: bold;
-}
-
 .title-small {
     position: relative;
     z-index: 1;
-    bottom: 40%;
+    bottom: 20%;
     right: -46%;
     font-size: 10VH;
     font-family: monospace;
@@ -126,10 +116,7 @@
 }
 
 @media (max-width : 1200px) {
-    .title-bold {
-        top: -0.5%;
-        font-size: 16vw;
-    }
+
 
     .ellipse-top-left {
         left: -90%;
@@ -178,9 +165,7 @@
 
 
 
-    .title-bold {
-        top: 2%;
-    }
+
 }
 
 
@@ -206,11 +191,7 @@
         top: -4%;
     }
 
-    .title-bold {
-        font-size: 16vw;
-        top: 0.8%;
-        left: 1%;
-    }
+
 
 
 }
@@ -236,10 +217,7 @@
         top: -3%;
     }
 
-    .title-bold {
-        top: 1%;
-        font-size: 15vw;
-    }
+
 
 
 }

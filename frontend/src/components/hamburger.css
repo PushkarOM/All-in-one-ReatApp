@@ -3,14 +3,14 @@
     width: auto;
     height: auto;
     font-size: 90px;
-    position: absolute;
-    top : 1.5%;
-    right : 0.5%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     transition: transform 0.25s ease-in-out;
+    margin-bottom: auto;
+    margin-top: 12px;
+    margin-right: 12px;
 }
 
 .bar {
@@ -40,7 +40,7 @@
     gap: 18px;
     backdrop-filter: blur(0px); 
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; 
-    z-index: 1000;
+    z-index: 9999 !important;
     opacity: 0; 
     transform: translateX(100%); 
     box-shadow: -4px 0px 2px 3px gray;
@@ -131,8 +131,6 @@
         width: 40px;
         height: 4px;
     }
-    .hamburger-symbol{
-        top : 2.15%;
-    }
+
 }
 

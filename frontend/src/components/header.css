@@ -1,0 +1,22 @@
+.header {
+    position: absolute;
+    top: 0%;
+    left : 0%;
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.title-bold {
+    z-index: 1;
+    font-family: monospace;
+    font-size: 10vw;
+    font-weight: bold;
+    width : 100%;
+    height : auto;
+}
+
