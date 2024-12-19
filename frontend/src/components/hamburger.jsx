@@ -50,9 +50,9 @@ const hamburger = () => {
                     </NavLink>
                     <NavLink 
                         className={({ isActive }) => isActive ? 'active-link' : 'Links'}
-                        to = "/"
+                        to = "/todoapp"
                     >
-                        Note Taker
+                        To Do List
                     </NavLink>
                     <NavLink 
                         className={({ isActive }) => isActive ? 'active-link' : 'Links'}
